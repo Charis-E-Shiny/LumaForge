@@ -1,6 +1,0 @@
-# Runtime dependencies for the Vercel Python function. Training needs requirements-train.txt.
-fastapi==0.162.0
-numpy==2.4.6
-onnxruntime==1.31.1
-pillow==13.0.0
-pymongo==4.19.0

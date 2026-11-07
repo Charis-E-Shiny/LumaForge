@@ -1,7 +1,0 @@
-line-length = 120
-target-version = "py310"
-
-[lint]
-select = ["E", "F", "I"]
-# Scripts extend sys.path before importing the package.
-ignore = ["E402", "E501"]
