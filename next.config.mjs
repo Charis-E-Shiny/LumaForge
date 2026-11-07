@@ -9,3 +9,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+// added by <Hansika>
