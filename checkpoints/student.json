@@ -1,0 +1,51 @@
+{
+ "args": {
+  "name": "student",
+  "data": "data\\crops",
+  "out": "checkpoints",
+  "arch": "hybrid",
+  "width": "12",
+  "iters": "4000",
+  "batch": "8",
+  "crop": "192",
+  "lr": "0.0015",
+  "workers": "2",
+  "threads": "4",
+  "seed": "7",
+  "val_every": "1000",
+  "teacher": "checkpoints\\teacher.pt",
+  "distill_weight": "0.5",
+  "no_noise_map": "False",
+  "no_color_head": "False",
+  "no_degrade": "False",
+  "no_color_loss": "False",
+  "no_classical_denoise": "False"
+ },
+ "history": [
+  {
+   "step": 1000,
+   "val_psnr": 30.17676554369756,
+   "loss": 0.02635779747646302,
+   "seconds": 973.1993715763092
+  },
+  {
+   "step": 2000,
+   "val_psnr": 30.125282341995163,
+   "loss": 0.02564975535776466,
+   "seconds": 1939.0806858539581
+  },
+  {
+   "step": 3000,
+   "val_psnr": 30.164333919744745,
+   "loss": 0.025429585826583206,
+   "seconds": 2884.155036211014
+  },
+  {
+   "step": 4000,
+   "val_psnr": 30.167167354017483,
+   "loss": 0.025161599919199945,
+   "seconds": 3838.619448661804
+  }
+ ],
+ "params": 152276
+}

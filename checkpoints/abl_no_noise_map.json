@@ -1,0 +1,51 @@
+{
+ "args": {
+  "name": "abl_no_noise_map",
+  "data": "data\\crops",
+  "out": "checkpoints",
+  "arch": "hybrid",
+  "width": "12",
+  "iters": "2000",
+  "batch": "8",
+  "crop": "192",
+  "lr": "0.0015",
+  "workers": "2",
+  "threads": "4",
+  "seed": "7",
+  "val_every": "500",
+  "teacher": "None",
+  "distill_weight": "0.5",
+  "no_noise_map": "True",
+  "no_color_head": "False",
+  "no_degrade": "False",
+  "no_color_loss": "False",
+  "no_classical_denoise": "False"
+ },
+ "history": [
+  {
+   "step": 500,
+   "val_psnr": 29.872144665347097,
+   "loss": 0.051201938662678005,
+   "seconds": 370.2570366859436
+  },
+  {
+   "step": 1000,
+   "val_psnr": 29.925868278699436,
+   "loss": 0.05062735131755471,
+   "seconds": 720.6192381381989
+  },
+  {
+   "step": 1500,
+   "val_psnr": 29.84330191805729,
+   "loss": 0.050425971202552315,
+   "seconds": 1070.5760605335236
+  },
+  {
+   "step": 2000,
+   "val_psnr": 29.99459401603725,
+   "loss": 0.05031655488908291,
+   "seconds": 1425.8012239933014
+  }
+ ],
+ "params": 152168
+}

@@ -1,0 +1,879 @@
+{
+ "generatedAt": "2026-11-07T05:19:58.841172+00:00",
+ "test": {
+  "blocks": 928,
+  "scenes": 29
+ },
+ "routed": {
+  "fast": 809,
+  "quality": 119
+ },
+ "main": [
+  {
+   "id": "traditional_fixed",
+   "label": "Traditional ISP, fixed settings",
+   "psnr": 30.5999,
+   "ssim": 0.8266,
+   "delta_e": 5.6982,
+   "lpips": 0.3708
+  },
+  {
+   "id": "traditional",
+   "label": "Traditional ISP, adaptive (baseline)",
+   "psnr": 30.8987,
+   "ssim": 0.8557,
+   "delta_e": 5.5344,
+   "lpips": 0.3287
+  },
+  {
+   "id": "learned_fp32",
+   "label": "Learned ISP, fp32",
+   "psnr": 31.0939,
+   "ssim": 0.8903,
+   "delta_e": 5.7813,
+   "lpips": 0.2374
+  },
+  {
+   "id": "learned_int8",
+   "label": "Learned ISP, int8",
+   "psnr": 30.9725,
+   "ssim": 0.8838,
+   "delta_e": 5.8206,
+   "lpips": 0.223
+  },
+  {
+   "id": "hybrid_compact_fp32",
+   "label": "Hybrid compact, fp32",
+   "psnr": 31.0863,
+   "ssim": 0.8872,
+   "delta_e": 5.4142,
+   "lpips": 0.2172
+  },
+  {
+   "id": "hybrid_compact_int8",
+   "label": "Hybrid compact, int8",
+   "psnr": 31.0143,
+   "ssim": 0.8823,
+   "delta_e": 5.4664,
+   "lpips": 0.2124
+  },
+  {
+   "id": "hybrid_quality_fp32",
+   "label": "Hybrid on denoised base, width 24, fp32",
+   "psnr": 30.9253,
+   "ssim": 0.8574,
+   "delta_e": 5.4325,
+   "lpips": 0.3234
+  },
+  {
+   "id": "hybrid_quality_fp16",
+   "label": "Hybrid on denoised base, width 24, fp16",
+   "psnr": 30.9253,
+   "ssim": 0.8574,
+   "delta_e": 5.4326,
+   "lpips": 0.3234
+  },
+  {
+   "id": "hybrid_fast_fp32",
+   "label": "Hybrid on denoised base, distilled, fp32",
+   "psnr": 30.9248,
+   "ssim": 0.8574,
+   "delta_e": 5.4294,
+   "lpips": 0.3233
+  },
+  {
+   "id": "hybrid_fast_int8",
+   "label": "Hybrid on denoised base, distilled, int8",
+   "psnr": 30.9075,
+   "ssim": 0.8559,
+   "delta_e": 5.4502,
+   "lpips": 0.324
+  },
+  {
+   "id": "hybrid_adaptive",
+   "label": "Hybrid adaptive (deployed)",
+   "psnr": 30.9166,
+   "ssim": 0.8832,
+   "delta_e": 5.6138,
+   "lpips": 0.217
+  }
+ ],
+ "deltas": {
+  "traditional": {
+   "psnr": [
+    0.017873749646217175,
+    -0.584579011835821,
+    0.6194232505540478
+   ],
+   "ssim": [
+    0.027568477976681858,
+    0.01667891669424315,
+    0.03954001184039074
+   ],
+   "delta_e": [
+    0.07943732574068267,
+    -0.31875997694401903,
+    0.43356122445507805
+   ],
+   "lpips": [
+    -0.11170672174093538,
+    -0.14355415507422456,
+    -0.08318850962276539
+   ]
+  },
+  "learned": {
+   "psnr": [
+    -0.05593920911379495,
+    -0.5323149374302577,
+    0.4250192304875486
+   ],
+   "ssim": [
+    -0.0006208917254517818,
+    -0.0033377549964292296,
+    0.0022331426409876033
+   ],
+   "delta_e": [
+    -0.20679867588754358,
+    -0.538249740836307,
+    0.11865056371637457
+   ],
+   "lpips": [
+    -0.006054095229422995,
+    -0.012561375801230717,
+    0.00047874798163257423
+   ]
+  }
+ },
+ "robust": [
+  {
+   "id": "clean",
+   "label": "Clean capture",
+   "blocks": 232,
+   "arms": {
+    "traditional": {
+     "psnr": 30.9521,
+     "ssim": 0.8531,
+     "delta_e": 5.5307,
+     "lpips": 0.3297
+    },
+    "learned": {
+     "psnr": 31.2093,
+     "ssim": 0.8871,
+     "delta_e": 5.7455,
+     "lpips": 0.24
+    },
+    "hybrid_adaptive": {
+     "psnr": 31.1387,
+     "ssim": 0.8856,
+     "delta_e": 5.5066,
+     "lpips": 0.2274
+    }
+   }
+  },
+  {
+   "id": "low_light_1stop",
+   "label": "Low light, 1 stop",
+   "blocks": 232,
+   "arms": {
+    "traditional": {
+     "psnr": 30.7413,
+     "ssim": 0.8416,
+     "delta_e": 5.6237,
+     "lpips": 0.3393
+    },
+    "learned": {
+     "psnr": 31.1172,
+     "ssim": 0.8852,
+     "delta_e": 5.7925,
+     "lpips": 0.2452
+    },
+    "hybrid_adaptive": {
+     "psnr": 31.0481,
+     "ssim": 0.8816,
+     "delta_e": 5.6532,
+     "lpips": 0.2349
+    }
+   }
+  },
+  {
+   "id": "low_light_2stop",
+   "label": "Low light, 2 stops",
+   "blocks": 232,
+   "arms": {
+    "traditional": {
+     "psnr": 30.2252,
+     "ssim": 0.8154,
+     "delta_e": 5.8975,
+     "lpips": 0.359
+    },
+    "learned": {
+     "psnr": 30.9132,
+     "ssim": 0.8796,
+     "delta_e": 5.8658,
+     "lpips": 0.2601
+    },
+    "hybrid_adaptive": {
+     "psnr": 30.7593,
+     "ssim": 0.8676,
+     "delta_e": 5.9724,
+     "lpips": 0.2696
+    }
+   }
+  },
+  {
+   "id": "low_light_3stop",
+   "label": "Low light, 3 stops",
+   "blocks": 232,
+   "arms": {
+    "traditional": {
+     "psnr": 29.2539,
+     "ssim": 0.7669,
+     "delta_e": 6.5072,
+     "lpips": 0.4093
+    },
+    "learned": {
+     "psnr": 30.4299,
+     "ssim": 0.8659,
+     "delta_e": 6.092,
+     "lpips": 0.297
+    },
+    "hybrid_adaptive": {
+     "psnr": 30.3024,
+     "ssim": 0.8573,
+     "delta_e": 6.1911,
+     "lpips": 0.3014
+    }
+   }
+  },
+  {
+   "id": "noise_moderate",
+   "label": "Added noise, moderate",
+   "blocks": 232,
+   "arms": {
+    "traditional": {
+     "psnr": 30.8667,
+     "ssim": 0.8521,
+     "delta_e": 5.5771,
+     "lpips": 0.3424
+    },
+    "learned": {
+     "psnr": 31.0199,
+     "ssim": 0.882,
+     "delta_e": 5.8107,
+     "lpips": 0.2533
+    },
+    "hybrid_adaptive": {
+     "psnr": 30.9964,
+     "ssim": 0.8797,
+     "delta_e": 5.6308,
+     "lpips": 0.2416
+    }
+   }
+  },
+  {
+   "id": "noise_severe",
+   "label": "Added noise, severe",
+   "blocks": 232,
+   "arms": {
+    "traditional": {
+     "psnr": 30.0434,
+     "ssim": 0.8236,
+     "delta_e": 5.9158,
+     "lpips": 0.4148
+    },
+    "learned": {
+     "psnr": 30.238,
+     "ssim": 0.8607,
+     "delta_e": 6.1594,
+     "lpips": 0.3137
+    },
+    "hybrid_adaptive": {
+     "psnr": 30.357,
+     "ssim": 0.8579,
+     "delta_e": 6.1176,
+     "lpips": 0.3083
+    }
+   }
+  },
+  {
+   "id": "cast_warm",
+   "label": "Colour cast, warm",
+   "blocks": 232,
+   "arms": {
+    "traditional": {
+     "psnr": 26.9148,
+     "ssim": 0.8285,
+     "delta_e": 8.3101,
+     "lpips": 0.3752
+    },
+    "learned": {
+     "psnr": 27.3506,
+     "ssim": 0.8746,
+     "delta_e": 8.4528,
+     "lpips": 0.2811
+    },
+    "hybrid_adaptive": {
+     "psnr": 27.8086,
+     "ssim": 0.8783,
+     "delta_e": 8.0143,
+     "lpips": 0.2567
+    }
+   }
+  },
+  {
+   "id": "cast_cool",
+   "label": "Colour cast, cool",
+   "blocks": 232,
+   "arms": {
+    "traditional": {
+     "psnr": 26.0403,
+     "ssim": 0.8341,
+     "delta_e": 9.7592,
+     "lpips": 0.3973
+    },
+    "learned": {
+     "psnr": 28.6593,
+     "ssim": 0.8821,
+     "delta_e": 7.7067,
+     "lpips": 0.2748
+    },
+    "hybrid_adaptive": {
+     "psnr": 27.7902,
+     "ssim": 0.8754,
+     "delta_e": 8.4186,
+     "lpips": 0.2762
+    }
+   }
+  },
+  {
+   "id": "combined_severe",
+   "label": "Combined: 2 stops, noise, cast",
+   "blocks": 232,
+   "arms": {
+    "traditional": {
+     "psnr": 27.5369,
+     "ssim": 0.78,
+     "delta_e": 7.674,
+     "lpips": 0.4675
+    },
+    "learned": {
+     "psnr": 28.3766,
+     "ssim": 0.8456,
+     "delta_e": 7.4675,
+     "lpips": 0.3411
+    },
+    "hybrid_adaptive": {
+     "psnr": 28.3576,
+     "ssim": 0.8435,
+     "delta_e": 7.5112,
+     "lpips": 0.3435
+    }
+   }
+  },
+  {
+   "id": "blind_underexposed_2stop",
+   "label": "2 stops, gain metadata missing",
+   "blocks": 232,
+   "arms": {
+    "traditional": {
+     "psnr": 16.9964,
+     "ssim": 0.633,
+     "delta_e": 15.2761,
+     "lpips": 0.3664
+    },
+    "hybrid_adaptive": {
+     "psnr": 17.2494,
+     "ssim": 0.6645,
+     "delta_e": 15.2798,
+     "lpips": 0.3427
+    }
+   }
+  }
+ ],
+ "ablation": {
+  "classical": [
+   {
+    "id": "full",
+    "label": "Full classical pipeline",
+    "psnr": 30.9521,
+    "ssim": 0.8531,
+    "delta_e": 5.5307,
+    "lpips": 0.3297
+   },
+   {
+    "id": "no_denoise",
+    "label": "No raw denoising",
+    "psnr": 26.3982,
+    "ssim": 0.4974,
+    "delta_e": 6.5388,
+    "lpips": 0.7435
+   },
+   {
+    "id": "no_white_balance",
+    "label": "No white balance",
+    "psnr": 22.2379,
+    "ssim": 0.7859,
+    "delta_e": 17.7948,
+    "lpips": 0.4989
+   },
+   {
+    "id": "no_ccm",
+    "label": "No colour correction matrix",
+    "psnr": 28.8287,
+    "ssim": 0.8507,
+    "delta_e": 7.4996,
+    "lpips": 0.3562
+   },
+   {
+    "id": "no_tone",
+    "label": "No tone mapping",
+    "psnr": 30.8363,
+    "ssim": 0.8535,
+    "delta_e": 5.5363,
+    "lpips": 0.3283
+   },
+   {
+    "id": "no_chroma_filter",
+    "label": "No chroma filter",
+    "psnr": 30.5534,
+    "ssim": 0.8404,
+    "delta_e": 5.8882,
+    "lpips": 0.3215
+   },
+   {
+    "id": "no_adaptive",
+    "label": "No adaptive control",
+    "psnr": 30.6569,
+    "ssim": 0.8249,
+    "delta_e": 5.7,
+    "lpips": 0.3704
+   }
+  ],
+  "trained_clean": [
+   {
+    "id": "abl_base",
+    "label": "Hybrid, all components",
+    "psnr": 31.0573,
+    "ssim": 0.8546,
+    "delta_e": 5.3322,
+    "lpips": 0.3228
+   },
+   {
+    "id": "abl_no_noise_map",
+    "label": "No noise map input",
+    "psnr": 30.9847,
+    "ssim": 0.8551,
+    "delta_e": 5.3677,
+    "lpips": 0.3238
+   },
+   {
+    "id": "abl_no_color_head",
+    "label": "No global colour head",
+    "psnr": 30.8467,
+    "ssim": 0.8542,
+    "delta_e": 5.465,
+    "lpips": 0.3277
+   },
+   {
+    "id": "abl_no_degrade",
+    "label": "No degradation training",
+    "psnr": 31.0566,
+    "ssim": 0.8555,
+    "delta_e": 5.3445,
+    "lpips": 0.3238
+   },
+   {
+    "id": "abl_no_color_loss",
+    "label": "No Lab colour loss",
+    "psnr": 31.2911,
+    "ssim": 0.8678,
+    "delta_e": 5.2751,
+    "lpips": 0.2667
+   },
+   {
+    "id": "abl_no_classical_denoise",
+    "label": "No classical denoise in base",
+    "psnr": 31.2116,
+    "ssim": 0.8836,
+    "delta_e": 5.3805,
+    "lpips": 0.2207
+   },
+   {
+    "id": "abl_learned",
+    "label": "No classical base (learned only)",
+    "psnr": 30.4049,
+    "ssim": 0.8737,
+    "delta_e": 6.6458,
+    "lpips": 0.2733
+   }
+  ],
+  "trained_severe": [
+   {
+    "id": "abl_base",
+    "label": "Hybrid, all components",
+    "psnr": 27.3734,
+    "ssim": 0.7884,
+    "delta_e": 7.6919,
+    "lpips": 0.4602
+   },
+   {
+    "id": "abl_no_noise_map",
+    "label": "No noise map input",
+    "psnr": 27.0971,
+    "ssim": 0.7878,
+    "delta_e": 7.9665,
+    "lpips": 0.4648
+   },
+   {
+    "id": "abl_no_color_head",
+    "label": "No global colour head",
+    "psnr": 27.0845,
+    "ssim": 0.7818,
+    "delta_e": 7.9792,
+    "lpips": 0.4676
+   },
+   {
+    "id": "abl_no_degrade",
+    "label": "No degradation training",
+    "psnr": 27.1366,
+    "ssim": 0.7844,
+    "delta_e": 7.91,
+    "lpips": 0.4657
+   },
+   {
+    "id": "abl_no_color_loss",
+    "label": "No Lab colour loss",
+    "psnr": 27.9956,
+    "ssim": 0.8092,
+    "delta_e": 7.3627,
+    "lpips": 0.3792
+   },
+   {
+    "id": "abl_no_classical_denoise",
+    "label": "No classical denoise in base",
+    "psnr": 28.5179,
+    "ssim": 0.84,
+    "delta_e": 7.1952,
+    "lpips": 0.3138
+   },
+   {
+    "id": "abl_learned",
+    "label": "No classical base (learned only)",
+    "psnr": 27.4875,
+    "ssim": 0.8368,
+    "delta_e": 8.5937,
+    "lpips": 0.3641
+   }
+  ]
+ },
+ "benchmark": {
+  "machine": {
+   "cpu": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+   "python": "3.11.6",
+   "system": "Windows 10"
+  },
+  "classical_ms": {
+   "256": 73.18130000203382,
+   "512": 320.135299989488,
+   "1024": 1505.86239999393
+  },
+  "models": {
+   "hybrid_quality_fp32": {
+    "file": "lumanet_quality.onnx",
+    "params": 587216,
+    "gmacs_512": 4.66462656,
+    "size_mb": 2.375599,
+    "latency": {
+     "256px_1t": {
+      "ms_median": 34.4972000020789,
+      "ms_p95": 35.79613500114647,
+      "peak_mb": 43.167744
+     },
+     "512px_1t": {
+      "ms_median": 160.49819999898318,
+      "ms_p95": 177.02762000553776,
+      "peak_mb": 141.361152
+     },
+     "512px_4t": {
+      "ms_median": 110.61825000797398,
+      "ms_p95": 129.4991549984843,
+      "peak_mb": 142.815232
+     },
+     "1024px_4t": {
+      "ms_median": 438.5284000018146,
+      "ms_p95": 512.7251199977763,
+      "peak_mb": 520.818688
+     }
+    }
+   },
+   "hybrid_quality_fp16": {
+    "file": "lumanet_quality_fp16.onnx",
+    "params": 587216,
+    "gmacs_512": 4.66462656,
+    "size_mb": 1.212826,
+    "latency": {
+     "256px_1t": {
+      "ms_median": 37.70484999404289,
+      "ms_p95": 41.520154994213954,
+      "peak_mb": 45.375488
+     },
+     "512px_1t": {
+      "ms_median": 169.58404999604682,
+      "ms_p95": 173.87937000530655,
+      "peak_mb": 133.922816
+     },
+     "512px_4t": {
+      "ms_median": 122.1904500052915,
+      "ms_p95": 129.30228499462828,
+      "peak_mb": 135.356416
+     },
+     "1024px_4t": {
+      "ms_median": 501.2791999979527,
+      "ms_p95": 584.2710349978006,
+      "peak_mb": 490.262528
+     }
+    }
+   },
+   "hybrid_fast_fp32": {
+    "file": "lumanet_fast.onnx",
+    "params": 152276,
+    "gmacs_512": 1.294223232,
+    "size_mb": 0.635796,
+    "latency": {
+     "256px_1t": {
+      "ms_median": 14.047850003407802,
+      "ms_p95": 14.87657000325271,
+      "peak_mb": 28.545024
+     },
+     "512px_1t": {
+      "ms_median": 67.88514999789186,
+      "ms_p95": 70.37819000470336,
+      "peak_mb": 88.190976
+     },
+     "512px_4t": {
+      "ms_median": 47.74840000027325,
+      "ms_p95": 61.10950500151375,
+      "peak_mb": 89.02656
+     },
+     "1024px_4t": {
+      "ms_median": 221.9395499996608,
+      "ms_p95": 242.91438999571255,
+      "peak_mb": 313.802752
+     }
+    }
+   },
+   "hybrid_fast_int8": {
+    "file": "lumanet_fast_int8.onnx",
+    "params": 152276,
+    "gmacs_512": 1.294223232,
+    "size_mb": 0.292285,
+    "latency": {
+     "256px_1t": {
+      "ms_median": 21.33220000541769,
+      "ms_p95": 22.528540002531372,
+      "peak_mb": 26.13248
+     },
+     "512px_1t": {
+      "ms_median": 82.34670000092592,
+      "ms_p95": 83.30471500230487,
+      "peak_mb": 58.445824
+     },
+     "512px_4t": {
+      "ms_median": 47.36209999828134,
+      "ms_p95": 50.92796999961138,
+      "peak_mb": 59.150336
+     },
+     "1024px_4t": {
+      "ms_median": 205.1110000029439,
+      "ms_p95": 213.78654499785625,
+      "peak_mb": 223.96928
+     }
+    }
+   },
+   "hybrid_compact_fp32": {
+    "file": "lumanet_compact.onnx",
+    "params": 152276,
+    "gmacs_512": 1.294223232,
+    "size_mb": 0.635796,
+    "latency": {
+     "256px_1t": {
+      "ms_median": 16.119500003696885,
+      "ms_p95": 17.317784995248076,
+      "peak_mb": 28.585984
+     },
+     "512px_1t": {
+      "ms_median": 70.5262499905075,
+      "ms_p95": 75.0346199987689,
+      "peak_mb": 88.424448
+     },
+     "512px_4t": {
+      "ms_median": 53.004049994342495,
+      "ms_p95": 57.41908000418334,
+      "peak_mb": 88.915968
+     },
+     "1024px_4t": {
+      "ms_median": 217.36729999975068,
+      "ms_p95": 236.6065000074741,
+      "peak_mb": 313.769984
+     }
+    }
+   },
+   "hybrid_compact_int8": {
+    "file": "lumanet_compact_int8.onnx",
+    "params": 152276,
+    "gmacs_512": 1.294223232,
+    "size_mb": 0.292278,
+    "latency": {
+     "256px_1t": {
+      "ms_median": 23.223299998790026,
+      "ms_p95": 23.46973999738111,
+      "peak_mb": 26.034176
+     },
+     "512px_1t": {
+      "ms_median": 82.08000000740867,
+      "ms_p95": 88.69234498852165,
+      "peak_mb": 58.273792
+     },
+     "512px_4t": {
+      "ms_median": 48.23919999762438,
+      "ms_p95": 52.2461300046416,
+      "peak_mb": 59.551744
+     },
+     "1024px_4t": {
+      "ms_median": 207.92634999088477,
+      "ms_p95": 238.33045998690065,
+      "peak_mb": 224.100352
+     }
+    }
+   },
+   "learned_fp32": {
+    "file": "lumanet_learned.onnx",
+    "params": 581124,
+    "gmacs_512": 4.494753792,
+    "size_mb": 2.345881,
+    "latency": {
+     "256px_1t": {
+      "ms_median": 29.085100002703257,
+      "ms_p95": 30.615824996493757,
+      "peak_mb": 36.569088
+     },
+     "512px_1t": {
+      "ms_median": 136.36690000566887,
+      "ms_p95": 151.92445999928168,
+      "peak_mb": 113.373184
+     },
+     "512px_4t": {
+      "ms_median": 94.6375000057742,
+      "ms_p95": 100.87776499567553,
+      "peak_mb": 113.7664
+     },
+     "1024px_4t": {
+      "ms_median": 340.16285000689095,
+      "ms_p95": 434.33391999933514,
+      "peak_mb": 412.176384
+     }
+    }
+   },
+   "learned_int8": {
+    "file": "lumanet_learned_int8.onnx",
+    "params": 581124,
+    "gmacs_512": 4.494753792,
+    "size_mb": 0.73136,
+    "latency": {
+     "256px_1t": {
+      "ms_median": 31.13310000480851,
+      "ms_p95": 31.259190000855597,
+      "peak_mb": 25.731072
+     },
+     "512px_1t": {
+      "ms_median": 108.83375000412343,
+      "ms_p95": 111.44781499897363,
+      "peak_mb": 66.985984
+     },
+     "512px_4t": {
+      "ms_median": 60.65469999884954,
+      "ms_p95": 68.86554500160855,
+      "peak_mb": 67.887104
+     },
+     "1024px_4t": {
+      "ms_median": 251.6390499949921,
+      "ms_p95": 278.04077500186395,
+      "peak_mb": 230.58432
+     }
+    }
+   }
+  }
+ },
+ "by_camera": {
+  "GP": {
+   "traditional": [
+    29.170501488237626,
+    6.206829151345624
+   ],
+   "learned_fp32": [
+    29.31264568992138,
+    6.786989871412516
+   ],
+   "hybrid_adaptive": [
+    29.362218733299684,
+    6.281731566207276
+   ]
+  },
+  "N6": {
+   "traditional": [
+    30.06141065658534,
+    6.114173444608848
+   ],
+   "learned_fp32": [
+    30.924572629501455,
+    5.944885034114122
+   ],
+   "hybrid_adaptive": [
+    30.119699417080692,
+    6.506296833356221
+   ]
+  },
+  "G4": {
+   "traditional": [
+    32.51801700065675,
+    4.495319967291185
+   ],
+   "learned_fp32": [
+    32.43515961776194,
+    5.1290359901530405
+   ],
+   "hybrid_adaptive": [
+    31.939509650551116,
+    4.712230406701565
+   ]
+  },
+  "IP": {
+   "traditional": [
+    31.852913122954046,
+    5.280135643978913
+   ],
+   "learned_fp32": [
+    32.08638946344821,
+    4.864721955110629
+   ],
+   "hybrid_adaptive": [
+    32.28243972267179,
+    5.02658757319053
+   ]
+  },
+  "S6": {
+   "traditional": [
+    34.41619965580723,
+    4.802048020064831
+   ],
+   "learned_fp32": [
+    32.79881509071467,
+    5.8153111562132835
+   ],
+   "hybrid_adaptive": [
+    34.33174247944949,
+    4.081783749163151
+   ]
+  }
+ }
+}

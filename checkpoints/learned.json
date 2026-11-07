@@ -1,0 +1,57 @@
+{
+ "args": {
+  "name": "learned",
+  "data": "data\\crops",
+  "out": "checkpoints",
+  "arch": "learned",
+  "width": "24",
+  "iters": "5000",
+  "batch": "8",
+  "crop": "192",
+  "lr": "0.0015",
+  "workers": "2",
+  "threads": "4",
+  "seed": "7",
+  "val_every": "1000",
+  "teacher": "None",
+  "distill_weight": "0.5",
+  "no_noise_map": "False",
+  "no_color_head": "False",
+  "no_degrade": "False",
+  "no_color_loss": "False",
+  "no_classical_denoise": "False"
+ },
+ "history": [
+  {
+   "step": 1000,
+   "val_psnr": 28.145302717733113,
+   "loss": 0.08320172263681888,
+   "seconds": 1062.4615490436554
+  },
+  {
+   "step": 2000,
+   "val_psnr": 28.79170421090559,
+   "loss": 0.05010621652565896,
+   "seconds": 2119.9085631370544
+  },
+  {
+   "step": 3000,
+   "val_psnr": 29.771669155393766,
+   "loss": 0.04562687588855624,
+   "seconds": 3158.9134664535522
+  },
+  {
+   "step": 4000,
+   "val_psnr": 30.1179022045507,
+   "loss": 0.042664501370862126,
+   "seconds": 4193.878697872162
+  },
+  {
+   "step": 5000,
+   "val_psnr": 30.090038310480846,
+   "loss": 0.040894881810992954,
+   "seconds": 5232.257647037506
+  }
+ ],
+ "params": 581124
+}
