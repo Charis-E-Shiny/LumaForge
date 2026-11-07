@@ -288,7 +288,7 @@ These measurements come from training crops. They are not test results.
 
 ## 📊 Evaluation Plan
 
-Results will appear in `eval_P2_T32.md`, which [`scripts/make_report.py`](scripts/make_report.py) generates from raw outputs, so that no number is typed by hand.
+Results are in `eval_P2_T32.md`, which [`scripts/make_report.py`](scripts/make_report.py) generates from raw outputs, so that no number is typed by hand.
 
 | Measure | Details |
 |---|---|
