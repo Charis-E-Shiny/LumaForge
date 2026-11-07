@@ -1,0 +1,44 @@
+[
+ {
+  "id": "scene-0036",
+  "title": "Scene 0036",
+  "camera": "Google Pixel",
+  "iso": "unknown",
+  "thumbnail": "/samples/scene-0036.jpg"
+ },
+ {
+  "id": "scene-0135",
+  "title": "Scene 0135",
+  "camera": "iPhone 7",
+  "iso": "unknown",
+  "thumbnail": "/samples/scene-0135.jpg"
+ },
+ {
+  "id": "scene-0074",
+  "title": "Scene 0074",
+  "camera": "Nexus 6",
+  "iso": "unknown",
+  "thumbnail": "/samples/scene-0074.jpg"
+ },
+ {
+  "id": "scene-0173",
+  "title": "Scene 0173",
+  "camera": "LG G4",
+  "iso": "unknown",
+  "thumbnail": "/samples/scene-0173.jpg"
+ },
+ {
+  "id": "scene-0102",
+  "title": "Scene 0102",
+  "camera": "Galaxy S6",
+  "iso": "unknown",
+  "thumbnail": "/samples/scene-0102.jpg"
+ },
+ {
+  "id": "scene-0050",
+  "title": "Scene 0050",
+  "camera": "Nexus 6",
+  "iso": "unknown",
+  "thumbnail": "/samples/scene-0050.jpg"
+ }
+]
