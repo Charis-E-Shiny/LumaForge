@@ -1,0 +1,57 @@
+{
+ "args": {
+  "name": "teacher",
+  "data": "data\\crops",
+  "out": "checkpoints",
+  "arch": "hybrid",
+  "width": "24",
+  "iters": "5000",
+  "batch": "8",
+  "crop": "192",
+  "lr": "0.0015",
+  "workers": "2",
+  "threads": "4",
+  "seed": "7",
+  "val_every": "1000",
+  "teacher": "None",
+  "distill_weight": "0.5",
+  "no_noise_map": "False",
+  "no_color_head": "False",
+  "no_degrade": "False",
+  "no_color_loss": "False",
+  "no_classical_denoise": "False"
+ },
+ "history": [
+  {
+   "step": 1000,
+   "val_psnr": 30.167564526892317,
+   "loss": 0.05303017900325358,
+   "seconds": 1289.4455938339233
+  },
+  {
+   "step": 2000,
+   "val_psnr": 29.900833519669277,
+   "loss": 0.05095944555103779,
+   "seconds": 2614.729973554611
+  },
+  {
+   "step": 3000,
+   "val_psnr": 29.933634104904712,
+   "loss": 0.050913387440145015,
+   "seconds": 4053.390331506729
+  },
+  {
+   "step": 4000,
+   "val_psnr": 30.045296217569803,
+   "loss": 0.04978199768252671,
+   "seconds": 5487.426054239273
+  },
+  {
+   "step": 5000,
+   "val_psnr": 29.97769128174957,
+   "loss": 0.05022397058084607,
+   "seconds": 7263.956307411194
+  }
+ ],
+ "params": 587216
+}

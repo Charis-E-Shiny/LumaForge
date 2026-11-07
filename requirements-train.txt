@@ -1,0 +1,18 @@
+# Everything needed to reproduce training, export and evaluation.
+# Install PyTorch first for your platform, for example:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+-r requirements.txt
+scipy
+scikit-image
+lpips
+onnx
+onnxscript
+onnxconverter-common
+matplotlib
+psutil
+tqdm
+opencv-python-headless
+pytest
+httpx
+ruff
+uvicorn
